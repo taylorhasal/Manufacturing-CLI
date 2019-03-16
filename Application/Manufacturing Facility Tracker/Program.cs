@@ -198,7 +198,7 @@ namespace Manufacturing_Facility_Tracker
                                 if (machines[i].Calls == 0)
                                 {
                                     found++;
-                                    Console.WriteLine("{0} with ID:{1} has not been called to produce any units.");
+                                    Console.WriteLine("{0} with ID:{1} has not been called to produce any units.", machines[i].Name, inputList[1]);
                                 }
                                 else
                                 {
