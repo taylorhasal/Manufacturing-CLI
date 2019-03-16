@@ -1,0 +1,7 @@
+C:\Users\etayl\Desktop\Manufacturing Facility Tracker\Manufacturing Facility Tracker\obj\Debug\Manufacturing Facility Tracker.csprojAssemblyReference.cache
+C:\Users\etayl\Desktop\Manufacturing Facility Tracker\Manufacturing Facility Tracker\obj\Debug\Manufacturing Facility Tracker.csproj.CoreCompileInputs.cache
+C:\Users\etayl\Desktop\Manufacturing Facility Tracker\Manufacturing Facility Tracker\bin\Debug\Manufacturing Facility Tracker.exe.config
+C:\Users\etayl\Desktop\Manufacturing Facility Tracker\Manufacturing Facility Tracker\bin\Debug\Manufacturing Facility Tracker.exe
+C:\Users\etayl\Desktop\Manufacturing Facility Tracker\Manufacturing Facility Tracker\bin\Debug\Manufacturing Facility Tracker.pdb
+C:\Users\etayl\Desktop\Manufacturing Facility Tracker\Manufacturing Facility Tracker\obj\Debug\Manufacturing Facility Tracker.exe
+C:\Users\etayl\Desktop\Manufacturing Facility Tracker\Manufacturing Facility Tracker\obj\Debug\Manufacturing Facility Tracker.pdb

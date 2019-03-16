@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manufacturing Facility Tracker", "Manufacturing Facility Tracker\Manufacturing Facility Tracker.csproj", "{65BB4F2A-D26B-4128-886C-BF8AF0C1D288}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65BB4F2A-D26B-4128-886C-BF8AF0C1D288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65BB4F2A-D26B-4128-886C-BF8AF0C1D288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65BB4F2A-D26B-4128-886C-BF8AF0C1D288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65BB4F2A-D26B-4128-886C-BF8AF0C1D288}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {913966FC-7DF4-4C82-857B-700CDF1C9BF0}
+	EndGlobalSection
+EndGlobal
