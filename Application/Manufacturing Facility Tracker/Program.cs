@@ -62,23 +62,23 @@ namespace Manufacturing_Facility_Tracker
                         {
                             if (machines[i].Name == inputList[1] || machines[i].ID == inputList[2])
                             {
-                            exists++;
+                                exists++;
                             }
                         }
                         if (exists == 0)
                         {
-                        machines.Add(new Machine() {Name=inputList[1], ID=inputList[2], Temp=0, Units=0});
-                        numberOfMachines++;
-                        Console.WriteLine("{0} has been created with an ID:{1}", inputList[1], inputList[2]);
+                            machines.Add(new Machine() {Name=inputList[1], ID=inputList[2], Temp=0, Units=0});
+                            numberOfMachines++;
+                            Console.WriteLine("{0} has been created with an ID:{1}", inputList[1], inputList[2]);
                         }
                         else 
                         {
-                        Console.WriteLine("A machine with that name or ID already exists.");
+                            Console.WriteLine("A machine with that name or ID already exists.");
                         }
                     }
                     else 
                     {
-                    Console.WriteLine("Please use correct format: create [machineName] [machineID]");
+                        Console.WriteLine("Please use correct format: create [machineName] [machineID]");
                     }
                 }
                 //ADD UNITS
@@ -86,7 +86,7 @@ namespace Manufacturing_Facility_Tracker
                 {
                     if (inputList.Length != 3)
                     {
-                    Console.WriteLine("Please use correct format: add [machineID] [numberOfUnits]");
+                        Console.WriteLine("Please use correct format: add [machineID] [numberOfUnits]");
                     }
                     else if (!inputList[2].All(char.IsDigit))
                     {
@@ -99,15 +99,15 @@ namespace Manufacturing_Facility_Tracker
                         {
                             if (machines[i].ID == inputList[1])
                             {
-                            machines[i].Units += int.Parse(inputList[2]);
-                            machines[i].Calls++;
-                            found++;
-                            Console.WriteLine("{0} with ID:{1} has been assigned {2} units.", machines[i].Name, inputList[1], inputList[2]);
+                                machines[i].Units += int.Parse(inputList[2]);
+                                machines[i].Calls++;
+                                found++;
+                                Console.WriteLine("{0} with ID:{1} has been assigned {2} units.", machines[i].Name, inputList[1], inputList[2]);
                             }
                         }
                         if (found == 0) 
                         {
-                        Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
+                            Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
                         }
                     }
                 }
@@ -116,7 +116,7 @@ namespace Manufacturing_Facility_Tracker
                 {
                     if (inputList.Length != 2 && inputList.Length != 3) 
                     {
-                    Console.WriteLine("Please use correct format: temperature [machineID] [setTemperature] OR temperature [machineID]");
+                        Console.WriteLine("Please use correct format: temperature [machineID] [setTemperature] OR temperature [machineID]");
                     }
                     else if (inputList.Length == 2)
                     {
@@ -125,34 +125,34 @@ namespace Manufacturing_Facility_Tracker
                         {
                             if (machines[i].ID == inputList[1])
                             {
-                            found++;
-                            Console.WriteLine("{0} with ID:{1} has a temperature of {2}.", machines[i].Name, inputList[1], machines[i].Temp);
+                                found++;
+                                Console.WriteLine("{0} with ID:{1} has a temperature of {2}.", machines[i].Name, inputList[1], machines[i].Temp);
                             }
                         }     
                         if (found == 0)
                         {
-                        Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
+                            Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
                         }
                     }
                     else if (inputList.Length == 3)
                     {
                         if (!inputList[2].All(char.IsDigit))
                         {
-                        Console.WriteLine("[setTemperature] must only contain numerical values");
+                            Console.WriteLine("[setTemperature] must only contain numerical values");
                         }
                         int found = 0;
                         for (int i = 0; i < numberOfMachines; i++)
                         {
                             if (machines[i].ID == inputList[1])
                             {
-                            found++;
-                            machines[i].Temp = int.Parse(inputList[2]);
-                            Console.WriteLine("The temperature of {0} with ID:{1} has been set to {2}.", machines[i].Name, inputList[1], machines[i].Temp);
+                                found++;
+                                machines[i].Temp = int.Parse(inputList[2]);
+                                Console.WriteLine("The temperature of {0} with ID:{1} has been set to {2}.", machines[i].Name, inputList[1], machines[i].Temp);
                             }
                         }  
                         if (found == 0)
                         {
-                        Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);      
+                            Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);      
                         }
                     }
                 }
@@ -161,7 +161,7 @@ namespace Manufacturing_Facility_Tracker
                 {
                     if (inputList.Length != 2)
                     {
-                    Console.WriteLine("Please use correct format: total [machineID]");
+                        Console.WriteLine("Please use correct format: total [machineID]");
                     }
                     else
                     {
@@ -170,13 +170,13 @@ namespace Manufacturing_Facility_Tracker
                         {
                             if (machines[i].ID == inputList[1])
                             {
-                            found++;
-                            Console.WriteLine("{0} with ID:{1} has created {2} total units.", machines[i].Name, inputList[1], machines[i].Units);
+                                found++;
+                                Console.WriteLine("{0} with ID:{1} has created {2} total units.", machines[i].Name, inputList[1], machines[i].Units);
                             }
                         }
                         if (found == 0)
                         {
-                        Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
+                            Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
                         }
                     }
                 }
@@ -185,7 +185,7 @@ namespace Manufacturing_Facility_Tracker
                 {
                     if (inputList.Length != 2)
                     {
-                    Console.WriteLine("Please use correct format: average [machineID]");
+                        Console.WriteLine("Please use correct format: average [machineID]");
                     }
                     else
                     {
@@ -202,15 +202,15 @@ namespace Manufacturing_Facility_Tracker
                                 }
                                 else
                                 {
-                                mean = ((decimal)(machines[i].Units)/100) / ((decimal)(machines[i].Calls)/100);
-                                found++;
-                                Console.WriteLine("{0} with ID:{1} has created an average of {2} units per call.", machines[i].Name, inputList[1], mean);
+                                    mean = ((decimal)(machines[i].Units)/100) / ((decimal)(machines[i].Calls)/100);
+                                    found++;
+                                    Console.WriteLine("{0} with ID:{1} has created an average of {2} units per call.", machines[i].Name, inputList[1], mean);
                                 }
                             }
                         }
                         if (found == 0)
                         {
-                        Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
+                            Console.WriteLine("Machine with ID:{0} does not exist", inputList[1]);
                         }
                     }
 
@@ -219,7 +219,7 @@ namespace Manufacturing_Facility_Tracker
                 {
                     for (int i = 0; i < numberOfMachines; i++)
                     {
-                    Console.WriteLine("{0}. Name: {1}, ID: {2}, Units: {3}, Calls: {4}, Temperature: {5}", i+1, machines[i].Name, machines[i].ID, machines[i].Units, machines[i].Calls, machines[i].Temp);
+                        Console.WriteLine("{0}. Name: {1}, ID: {2}, Units: {3}, Calls: {4}, Temperature: {5}", i+1, machines[i].Name, machines[i].ID, machines[i].Units, machines[i].Calls, machines[i].Temp);
                     }                          
                 }
                 else
